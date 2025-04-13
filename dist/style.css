@@ -31,6 +31,7 @@ ul {
   width: 120px;
   border: 1px solid #eee;
   border-radius: 20px;
+  margin-bottom: 10px;
   text-align: center;
   transition: all 0.3s;
 }
@@ -53,6 +54,7 @@ body {
   color: #eee;
   width: 100%;
   height: 100vh;
+  margin-bottom: 30px;
 }
 .hero header {
   display: flex;
@@ -120,6 +122,7 @@ body {
 }
 .hero .intro .intro-text .btns {
   margin-top: 20px;
+  margin-bottom: 20px;
   font-weight: bold;
 }
 .hero .intro .intro-text .btns i {
@@ -190,6 +193,9 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .intro-img {
+    display: none;
+  }
   .work {
     flex-direction: column;
   }

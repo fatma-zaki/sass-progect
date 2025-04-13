@@ -25,6 +25,7 @@ ul {
   width: 120px;
   border: 1px solid $secondry-color;
   border-radius: 20px;
+  margin-bottom: 10px;
   text-align: center;
   transition: all 0.3s;
   @extend %small-padding;
