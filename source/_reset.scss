@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+button {
+  all: unset;
+}
+a {
+  text-decoration: none;
+  color: initial;
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0px auto;
+}
+.btn {
+  width: 120px;
+  border: 1px solid $secondry-color;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s;
+  @extend %small-padding;
+}
+
+%section-padding {
+  padding: 60px;
+}
+%small-padding {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+@mixin dFlex($dir: row, $wrap: nowrap, $justify: space-between, $gap: 15px) {
+  display: flex;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+  gap: $gap;
+}

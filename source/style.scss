@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import "_var";
+@import "_reset";
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+.hero {
+  background-color: $primary-color;
+  color: $secondry-color;
+  width: 100%;
+  height: 100vh;
+  header {
+    @extend .container;
+    @include dFlex();
+    background-color: inherit;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 21px;
+    .logo {
+      text-transform: capitalize;
+    }
+    nav {
+      @include dFlex();
+
+      ul {
+        @include dFlex();
+
+        li {
+          a {
+            color: $secondry-color;
+            transition: all 0.3s;
+          }
+        }
+        li:hover a{
+          color: $yellow;
+        }
+      }
+      button {
+        margin-left: 10px;
+        a {
+          color: $secondry-color;
+        }
+
+      }
+      button:hover{
+          background-color: $yellow;
+          a{
+
+               color: $dark;
+          }
+      }
+    }
+  }
+  .intro {
+    @extend .container;
+
+    @include dFlex();
+    @extend %section-padding;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    .intro-text {
+      h2 {
+        font-size: 60px;
+        line-height: 1.3;
+      }
+      p {
+        color: #bbbbcb;
+        margin-top: 20px;
+      }
+      .btns {
+        margin-top: 20px;
+        font-weight: bold;
+        i{
+          margin-left: 10px;
+        }
+        .btn:hover{
+          background-color: $yellow;
+          color: $dark;
+          border-color: $dark;
+        }
+        .yellow {
+          background-color: $yellow;
+          color: $dark;
+        }
+        .yellow:hover{
+          background-color: $primary-color;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
+
+.work{
+   @extend %section-padding ;
+   @include dFlex($wrap: wrap,$gap: 50px);
+   @extend .container;
+   
+     .left{
+          width:200px;
+          margin-right: 100px;
+          a{
+
+               color: $primary-color;
+               i{
+                    margin-left: 10px;
+               }
+          }
+          
+          
+     }
+   .box-parent{
+     flex: 1;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     .box{
+          width: 200px;
+     }   }
+}
+

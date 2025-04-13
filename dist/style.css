@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  all: unset;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+ul {
+  list-style: none;
+}
+
+.container, .work, .hero .intro, .hero header {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.btn {
+  width: 120px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.work, .hero .intro {
+  padding: 60px;
+}
+
+.btn {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+.hero {
+  background-color: #1c1e53;
+  color: #eee;
+  width: 100%;
+  height: 100vh;
+}
+.hero header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 15px;
+  background-color: inherit;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 21px;
+}
+.hero header .logo {
+  text-transform: capitalize;
+}
+.hero header nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+.hero header nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+.hero header nav ul li a {
+  color: #eee;
+  transition: all 0.3s;
+}
+.hero header nav ul li:hover a {
+  color: #FCD980;
+}
+.hero header nav button {
+  margin-left: 10px;
+}
+.hero header nav button a {
+  color: #eee;
+}
+.hero header nav button:hover {
+  background-color: #FCD980;
+}
+.hero header nav button:hover a {
+  color: #1B1C2B;
+}
+.hero .intro {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.hero .intro .intro-text h2 {
+  font-size: 60px;
+  line-height: 1.3;
+}
+.hero .intro .intro-text p {
+  color: #bbbbcb;
+  margin-top: 20px;
+}
+.hero .intro .intro-text .btns {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.hero .intro .intro-text .btns i {
+  margin-left: 10px;
+}
+.hero .intro .intro-text .btns .btn:hover {
+  background-color: #FCD980;
+  color: #1B1C2B;
+  border-color: #1B1C2B;
+}
+.hero .intro .intro-text .btns .yellow {
+  background-color: #FCD980;
+  color: #1B1C2B;
+}
+.hero .intro .intro-text .btns .yellow:hover {
+  background-color: #1c1e53;
+  color: #FCD980;
+}
+
+.work {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.work .left {
+  width: 200px;
+  margin-right: 100px;
+}
+.work .left a {
+  color: #1c1e53;
+}
+.work .left a i {
+  margin-left: 10px;
+}
+.work .box-parent {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.work .box-parent .box {
+  width: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */
